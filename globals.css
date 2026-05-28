@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
+
+:root {
+  /* Color tokens */
+  /* --color-bg-primary       -> main page background */
+  /* --color-bg-secondary     -> alternate sections (every other section) */
+  /* --color-bg-surface       -> cards, modals, form inputs */
+  /* --color-bg-footer        -> footer background */
+  /* --color-text-primary     -> headings, bold labels, spa name */
+  /* --color-text-body        -> paragraphs, descriptions */
+  /* --color-text-muted       -> captions, addresses, small labels */
+  /* --color-text-hint        -> copyright, placeholder text */
+  /* --color-accent-green     -> CTA buttons, icon fills, active markers, feature checkmarks */
+  /* --color-accent-green-hover -> button hover state */
+  /* --color-accent-gold      -> section headings, divider lines, logo text, branch names, icon borders, star ratings, quote marks */
+  /* --color-accent-gold-muted -> card borders, decorative lines, thin dividers */
+  /* --color-accent-amber     -> timeline marker step 1, warm highlight accents */
+  /* --color-marker-step1     -> Khoi thong dot */
+  /* --color-marker-step2     -> Giai toa dot */
+  /* --color-marker-step3     -> Nuoi duong dot */
+  /* --color-border-subtle    -> card borders, section dividers */
+  /* --color-border-default   -> icon circles, input underlines */
+  /* --color-border-strong    -> hover states, active borders */
+  --color-bg-primary: #1E2119;
+  --color-bg-secondary: #1E2119;
+  --color-bg-surface: #3D2F1E;
+  --color-bg-footer: #1E2119;
+  --color-text-primary: #F5EFE4;
+  --color-text-body: rgba(245, 239, 228, 0.80);
+  --color-text-muted: rgba(245, 239, 228, 0.50);
+  --color-text-hint: rgba(245, 239, 228, 0.35);
+  --color-accent-green: #6B8C5E;
+  --color-accent-green-hover: #5A7A4E;
+  --color-accent-gold: #C4A882;
+  --color-accent-gold-muted: rgba(196, 168, 130, 0.30);
+  --color-accent-amber: #C8956C;
+  --color-border-subtle: rgba(196, 168, 130, 0.15);
+  --color-border-default: rgba(196, 168, 130, 0.35);
+  --color-border-strong: rgba(196, 168, 130, 0.60);
+  --color-marker-step1: #C8956C;
+  --color-marker-step2: #5C7A6B;
+  --color-marker-step3: #A8BFB0;
+  --shadow-card: 0 4px 24px rgba(44, 26, 14, 0.06);
+  --shadow-image: 0 20px 60px rgba(44, 26, 14, 0.15);
+  --shadow-float: 0 4px 16px rgba(107, 140, 94, 0.35);
+  --border-radius-btn: 100px;
+
+  /* Font families */
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Mulish', system-ui, sans-serif;
+
+  /* Font sizes */
+  --text-label: 11px;
+  --text-sm: 13px;
+  --text-base: 15px;
+  --text-lg: 18px;
+  --text-xl: 22px;
+  --text-2xl: 32px;
+  --text-3xl: 42px;
+  --text-4xl: clamp(36px, 5vw, 60px);
+
+  /* Font weights */
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-medium: 500;
+
+  /* Line heights */
+  --leading-tight: 1.2;
+  --leading-normal: 1.55;
+  --leading-loose: 1.9;
+
+  /* Letter spacing */
+  --tracking-wide: 0.05em;
+  --tracking-wider: 0.15em;
+  --tracking-label: 0.25em;
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.9;
+  letter-spacing: 0.01em;
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  font-weight: var(--weight-regular);
+  line-height: var(--leading-tight);
+  color: var(--color-text-primary);
+}
+
+h1 {
+  font-size: var(--text-4xl);
+  font-style: italic;
+}
+
+h2 {
+  font-size: var(--text-3xl);
+  font-style: italic;
+}
+
+h3 {
+  font-size: var(--text-xl);
+  font-style: normal;
+}
+
+h4 {
+  font-size: var(--text-lg);
+  font-style: normal;
+}
+
+p {
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.9;
+  letter-spacing: 0.01em;
+  color: var(--color-text-body);
+}
+
+/* Section label - small all-caps above headings */
+.label {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--color-accent-green);
+}
+
+/* Sub-headline - italic, gold, below H1/H2 */
+.subheading {
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-style: italic;
+  font-size: 17px;
+  line-height: 1.65;
+  letter-spacing: 0.01em;
+  color: var(--color-accent-gold);
+}
+
+/* Muted text - captions, metadata, small info */
+.text-muted {
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: 13px;
+  color: var(--color-text-muted);
+  letter-spacing: 0.03em;
+}
+
+/* UI label - card tags, price, duration */
+.text-ui {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+/* Gold accent text - headings highlight, dividers */
+.text-gold {
+  color: var(--color-accent-gold);
+}
+
+/* Green accent text - CTA labels, active states */
+.text-green {
+  color: var(--color-accent-green);
+}
+
+/* Typography utility mappings for existing Tailwind arbitrary classes */
+.font-light {
+  font-weight: var(--weight-light) !important;
+}
+
+.font-normal,
+.font-serif {
+  font-weight: var(--weight-regular) !important;
+}
+
+.font-semibold,
+.font-bold {
+  font-weight: var(--weight-medium) !important;
+}
+
+.text-\[10px\],
+.text-\[11px\],
+.text-\[12px\] {
+  font-size: var(--text-label) !important;
+}
+
+.text-\[13px\],
+.text-\[14px\] {
+  font-size: var(--text-sm) !important;
+}
+
+.text-\[15px\],
+.text-\[16px\] {
+  font-size: var(--text-base) !important;
+}
+
+.text-\[18px\] {
+  font-size: var(--text-lg) !important;
+}
+
+.text-\[24px\] {
+  font-size: var(--text-xl) !important;
+}
+
+.text-\[40px\] {
+  font-size: var(--text-2xl) !important;
+}
+
+.text-\[64px\],
+.text-\[80px\],
+.text-\[96px\] {
+  font-size: var(--text-4xl) !important;
+}
+
+.btn-rounded {
+  border-radius: var(--border-radius-btn) !important;
+}
+
+.logo-wrapper,
+.navbar-brand,
+.brand-logo,
+nav .logo,
+header .logo {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  outline: none !important;
+}
+
+.logo-wrapper img,
+.navbar-brand img,
+nav .logo img,
+header .logo img,
+header img.brand-logo-img {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  mix-blend-mode: screen;
+  display: block;
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}

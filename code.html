@@ -1,0 +1,1816 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>AURA SANCTUARY | Premium Massage Therapy</title>
+<link href="./globals.css" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "bg-primary": "var(--color-bg-primary)",
+                    "bg-secondary": "var(--color-bg-secondary)",
+                    "bg-surface": "var(--color-bg-surface)",
+                    "bg-footer": "var(--color-bg-footer)",
+                    "text-primary": "var(--color-text-primary)",
+                    "text-body": "var(--color-text-body)",
+                    "text-muted": "var(--color-text-muted)",
+                    "text-hint": "var(--color-text-hint)",
+                    "accent-green": "var(--color-accent-green)",
+                    "accent-green-hover": "var(--color-accent-green-hover)",
+                    "accent-gold": "var(--color-accent-gold)",
+                    "accent-gold-muted": "var(--color-accent-gold-muted)",
+                    "accent-amber": "var(--color-accent-amber)",
+                    "border-subtle": "var(--color-border-subtle)",
+                    "border-default": "var(--color-border-default)",
+                    "border-strong": "var(--color-border-strong)",
+                    "marker-step1": "var(--color-marker-step1)",
+                    "marker-step2": "var(--color-marker-step2)",
+                    "marker-step3": "var(--color-marker-step3)",
+                    "background": "var(--color-bg-primary)",
+                    "surface": "var(--color-bg-surface)",
+                    "surface-dim": "var(--color-bg-secondary)",
+                    "surface-container-lowest": "var(--color-bg-surface)",
+                    "outline-variant": "var(--color-border-subtle)",
+                    "primary": "var(--color-text-primary)",
+                    "primary-container": "var(--color-accent-green)",
+                    "secondary": "var(--color-accent-gold)",
+                    "on-primary": "var(--color-text-primary)",
+                    "on-secondary": "var(--color-bg-primary)",
+                    "on-background": "var(--color-text-primary)",
+                    "on-surface-variant": "var(--color-text-body)"
+            },
+            "boxShadow": {
+                    "card": "var(--shadow-card)",
+                    "image": "var(--shadow-image)",
+                    "float": "var(--shadow-float)"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-tablet": "40px",
+                    "margin-mobile": "24px",
+                    "section-gap": "100px",
+                    "gutter": "40px",
+                    "margin-desktop": "120px",
+                    "container-max": "1800px",
+                    "unit": "8px"
+            },
+            "fontFamily": {
+                    "display-lg": ["var(--font-heading)"],
+                    "headline-lg": ["var(--font-heading)"],
+                    "label-md": ["var(--font-body)"],
+                    "headline-xl": ["var(--font-heading)"],
+                    "body-md": ["var(--font-body)"],
+                    "headline-lg-mobile": ["var(--font-heading)"],
+                    "body-lg": ["var(--font-body)"]
+            },
+            "fontSize": {
+                    "display-lg": ["var(--text-4xl)", {"lineHeight": "var(--leading-tight)", "letterSpacing": "var(--tracking-wide)", "fontWeight": "var(--weight-light)"}],
+                    "headline-lg": ["var(--text-2xl)", {"lineHeight": "var(--leading-tight)", "letterSpacing": "0.02em", "fontWeight": "var(--weight-regular)"}],
+                    "label-md": ["var(--text-label)", {"lineHeight": "1.0", "letterSpacing": "var(--tracking-wider)", "fontWeight": "var(--weight-medium)"}],
+                    "headline-xl": ["var(--text-3xl)", {"lineHeight": "var(--leading-tight)", "letterSpacing": "0.03em", "fontWeight": "var(--weight-light)"}],
+                    "body-md": ["var(--text-base)", {"lineHeight": "var(--leading-loose)", "letterSpacing": "0", "fontWeight": "var(--weight-regular)"}],
+                    "headline-lg-mobile": ["var(--text-xl)", {"lineHeight": "var(--leading-tight)", "letterSpacing": "0.02em", "fontWeight": "var(--weight-regular)"}],
+                    "body-lg": ["var(--text-lg)", {"lineHeight": "var(--leading-loose)", "letterSpacing": "0.01em", "fontWeight": "var(--weight-regular)"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .parallax-bg { background-attachment: fixed; background-position: center; background-size: cover; }
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                105deg,
+                rgba(20, 20, 16, 0.82) 0%,
+                rgba(20, 20, 16, 0.60) 45%,
+                rgba(20, 20, 16, 0.15) 75%,
+                rgba(20, 20, 16, 0.00) 100%
+            );
+            z-index: 1;
+        }
+        .hero-cta {
+            background-color: #6B8C5E;
+            color: #F5EFE4;
+            border: none;
+            letter-spacing: 0.2em;
+            font-size: 12px;
+            font-weight: 400;
+            padding: 14px 36px;
+            border-radius: 100px;
+            box-shadow: 0 4px 16px rgba(107, 140, 94, 0.35);
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .hero-cta:hover {
+            background-color: #5A7A4E;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 32px rgba(107, 140, 94, 0.5);
+        }
+        .hero-cta:active {
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(107, 140, 94, 0.4);
+        }
+        .hero-image-wrap {
+            overflow: hidden;
+        }
+        .hero-image {
+            transition: transform 1.1s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                        filter 1.1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            will-change: transform, filter;
+        }
+        .hero:hover .hero-image {
+            transform: scale(1.05);
+            filter: brightness(1.06) contrast(1.03) saturate(1.05);
+        }
+        
+        @keyframes soft-pulse {
+            0% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(1.8); opacity: 0; }
+            100% { transform: scale(1); opacity: 0; }
+        }
+        .pulse-ring { animation: soft-pulse 3s infinite; }
+        @keyframes pulse-ring {
+            0% {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 0.45;
+            }
+            50% {
+                transform: translate(-50%, -50%) scale(1.6);
+                opacity: 0.08;
+            }
+            100% {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 0.45;
+            }
+        }
+        .process-section {
+            background: var(--color-bg-primary);
+            padding: 120px 0;
+        }
+        .process-section__inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        .process-section__header {
+            text-align: center;
+            margin-bottom: 100px;
+        }
+        .process-section__divider {
+            width: 40px;
+            height: 1px;
+            background: #C4A882;
+            margin: 24px auto 0;
+        }
+        .timeline-steps {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+        .timeline-line {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(
+                to bottom,
+                transparent 0%,
+                #C8956C 15%,
+                #5C7A6B 50%,
+                #A8BFB0 85%,
+                transparent 100%
+            );
+            opacity: 0.7;
+            z-index: 0;
+        }
+        .timeline-step {
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            min-height: 480px;
+            padding: 60px 0;
+        }
+        .timeline-step--2 .timeline-step__content {
+            order: 1;
+        }
+        .timeline-step--2 .timeline-step__image {
+            order: 2;
+        }
+        .timeline-step__image {
+            position: relative;
+            z-index: 1;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow:
+                0 20px 48px rgba(196, 168, 130, 0.12),
+                0 8px 24px rgba(20, 16, 10, 0.08);
+            transition: box-shadow 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .timeline-step__image::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            z-index: 2;
+            pointer-events: none;
+            border-radius: inherit;
+            border: 1px solid rgba(196, 168, 130, 0.14);
+        }
+        .timeline-step__image:hover {
+            box-shadow:
+                0 24px 56px rgba(196, 168, 130, 0.16),
+                0 10px 28px rgba(20, 16, 10, 0.1);
+        }
+        .timeline-step--1 .timeline-step__image,
+        .timeline-step--3 .timeline-step__image {
+            padding-right: 48px;
+        }
+        .timeline-step--2 .timeline-step__image {
+            padding-left: 48px;
+        }
+        .timeline-step__img {
+            width: 100%;
+            height: 420px;
+            object-fit: cover;
+            object-position: center center;
+            display: block;
+            border-radius: 0;
+            filter: saturate(0.92);
+            opacity: 0;
+            transition:
+                opacity 1s cubic-bezier(0.22, 1, 0.36, 1),
+                transform 1s cubic-bezier(0.22, 1, 0.36, 1),
+                filter 0.9s ease;
+        }
+        .timeline-step__image:hover .timeline-step__img {
+            filter: saturate(0.96);
+        }
+        .timeline-step__img--from-left {
+            transform: translateX(-24px);
+        }
+        .timeline-step__img--from-right {
+            transform: translateX(24px);
+        }
+        .timeline-step__img.is-visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .timeline-step__content {
+            position: relative;
+            z-index: 1;
+        }
+        .timeline-step--1 .timeline-step__content,
+        .timeline-step--3 .timeline-step__content {
+            padding-left: 64px;
+        }
+        .timeline-step--2 .timeline-step__content {
+            padding-right: 64px;
+        }
+        .timeline-step__number {
+            font-family: var(--font-heading);
+            font-size: 96px;
+            font-weight: 400;
+            font-style: italic;
+            color: rgba(196, 168, 130, 0.08);
+            line-height: 1;
+            position: absolute;
+            top: 40px;
+            user-select: none;
+            pointer-events: none;
+            z-index: 0;
+        }
+        .timeline-step--1 .timeline-step__number,
+        .timeline-step--3 .timeline-step__number {
+            right: 48px;
+        }
+        .timeline-step--2 .timeline-step__number {
+            left: 48px;
+        }
+        .timeline-step__icon {
+            font-size: 24px;
+            width: 24px;
+            height: 24px;
+            margin-bottom: 12px;
+            position: relative;
+            z-index: 1;
+        }
+        .timeline-step--1 .timeline-step__icon {
+            color: #C8956C;
+        }
+        .timeline-step--2 .timeline-step__icon {
+            color: #5C7A6B;
+        }
+        .timeline-step--3 .timeline-step__icon {
+            color: #A8BFB0;
+        }
+        .timeline-step__title {
+            font-family: var(--font-heading);
+            font-style: italic;
+            font-size: 28px;
+            color: #F5EFE4;
+            margin-bottom: 4px;
+            position: relative;
+            z-index: 1;
+        }
+        .timeline-step__subtitle {
+            display: block;
+            font-family: var(--font-body);
+            font-size: 10px;
+            font-weight: 400;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+        .timeline-step--1 .timeline-step__subtitle,
+        .timeline-step--2 .timeline-step__subtitle,
+        .timeline-step--3 .timeline-step__subtitle {
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.18em;
+        }
+        .timeline-step--1 .timeline-step__subtitle {
+            color: #DDB892;
+            text-shadow:
+                0 0 12px rgba(200, 149, 108, 0.65),
+                0 0 28px rgba(221, 184, 146, 0.35);
+        }
+        .process-headline-glow {
+            color: #7F9F71;
+            text-shadow:
+                0 0 12px rgba(107, 140, 94, 0.65),
+                0 0 28px rgba(127, 159, 113, 0.35);
+        }
+        .timeline-step--2 .timeline-step__subtitle {
+            color: #9BB8A8;
+            text-shadow:
+                0 0 12px rgba(92, 122, 107, 0.65),
+                0 0 28px rgba(155, 184, 168, 0.35);
+        }
+        .timeline-step--3 .timeline-step__subtitle {
+            color: #C8DDD2;
+            text-shadow:
+                0 0 12px rgba(168, 191, 176, 0.65),
+                0 0 28px rgba(200, 221, 210, 0.35);
+        }
+        .timeline-step--2 .timeline-step__title,
+        .timeline-step--3 .timeline-step__title {
+            font-size: 30px;
+            margin-bottom: 6px;
+        }
+        .timeline-step--2 .timeline-step__title {
+            text-shadow: 0 1px 2px rgba(20, 16, 10, 0.2),
+                0 0 28px rgba(92, 122, 107, 0.25);
+        }
+        .timeline-step--3 .timeline-step__title {
+            text-shadow: 0 1px 2px rgba(20, 16, 10, 0.2),
+                0 0 28px rgba(168, 191, 176, 0.25);
+        }
+        .timeline-step__accent-line {
+            display: block;
+            width: 48px;
+            height: 1.5px;
+            opacity: 0.9;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+        .timeline-step--1 .timeline-step__accent-line {
+            background: #DDB892;
+        }
+        .timeline-step--2 .timeline-step__accent-line {
+            background: #9BB8A8;
+        }
+        .timeline-step--3 .timeline-step__accent-line {
+            background: #C8DDD2;
+        }
+        .timeline-step__body {
+            font-family: var(--font-body);
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 1.9;
+            color: rgba(245, 239, 228, 0.68);
+            max-width: 380px;
+            position: relative;
+            z-index: 1;
+        }
+        .marker-wrapper,
+        .timeline-marker {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            z-index: 2;
+        }
+        .timeline-marker-center {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 3;
+        }
+        .timeline-marker-center--1 {
+            background: #C8956C;
+            box-shadow:
+                0 0 10px rgba(200, 149, 108, 0.7),
+                0 0 24px rgba(200, 149, 108, 0.3);
+        }
+        .timeline-marker-center--2 {
+            background: #5C7A6B;
+            box-shadow:
+                0 0 10px rgba(92, 122, 107, 0.7),
+                0 0 24px rgba(92, 122, 107, 0.3);
+        }
+        .timeline-marker-center--3 {
+            background: #A8BFB0;
+            box-shadow:
+                0 0 10px rgba(168, 191, 176, 0.7),
+                0 0 24px rgba(168, 191, 176, 0.3);
+        }
+        .timeline-marker-gap {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+        }
+        .timeline-marker-gap--1 {
+            background: rgba(200, 149, 108, 0.12);
+        }
+        .timeline-marker-gap--2 {
+            background: rgba(92, 122, 107, 0.12);
+        }
+        .timeline-marker-gap--3 {
+            background: rgba(168, 191, 176, 0.12);
+        }
+        .timeline-marker-outer {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            border: 1.5px solid;
+            background: transparent;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            animation: pulse-ring 3s ease-in-out infinite;
+        }
+        .timeline-marker-outer--1 {
+            border-color: rgba(200, 149, 108, 0.45);
+            animation-delay: 0s;
+        }
+        .timeline-marker-outer--2 {
+            border-color: rgba(92, 122, 107, 0.45);
+            animation-delay: 1s;
+        }
+        .timeline-marker-outer--3 {
+            border-color: rgba(168, 191, 176, 0.45);
+            animation-delay: 2s;
+        }
+        @media (max-width: 1024px) {
+            .timeline-step--1 .timeline-step__content,
+            .timeline-step--3 .timeline-step__content {
+                padding-left: 32px;
+            }
+            .timeline-step--2 .timeline-step__content {
+                padding-right: 32px;
+            }
+            .timeline-step__img {
+                height: 340px;
+            }
+            .timeline-step__number {
+                font-size: 72px;
+            }
+        }
+        @media (max-width: 768px) {
+            .process-section {
+                padding: 80px 0;
+            }
+            .process-section__inner {
+                padding: 0 16px;
+            }
+            .process-section__header {
+                margin-bottom: 64px;
+            }
+            .timeline-line {
+                left: 24px;
+                transform: none;
+            }
+            .marker-wrapper,
+            .timeline-marker {
+                left: 24px;
+            }
+            .timeline-step {
+                grid-template-columns: 1fr;
+                min-height: auto;
+                padding: 48px 0 48px 56px;
+            }
+            .timeline-step__image {
+                order: -1;
+                padding: 0 !important;
+                margin-bottom: 24px;
+            }
+            .timeline-step__content {
+                order: 0;
+            }
+            .timeline-step__img {
+                height: 280px;
+            }
+            .timeline-step__content {
+                padding: 32px 24px 32px 0 !important;
+            }
+            .timeline-step__number {
+                display: none;
+            }
+        }
+        .service-card {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            overflow: hidden;
+            border-radius: 24px;
+            transition:
+                transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+                border-color 0.45s ease,
+                box-shadow 0.45s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(196, 168, 130, 0.45) !important;
+            box-shadow:
+                0 20px 48px rgba(20, 16, 10, 0.28),
+                0 0 0 1px rgba(196, 168, 130, 0.12);
+        }
+        .service-card--featured {
+            border-color: rgba(196, 168, 130, 0.35);
+        }
+        .service-card--featured:hover {
+            border-color: rgba(196, 168, 130, 0.55) !important;
+        }
+        .service-card__badge {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            z-index: 10;
+            padding: 8px 16px;
+            font-family: var(--font-body);
+            font-size: 10px;
+            font-weight: 500;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--color-text-primary);
+            background: var(--color-accent-green);
+            border-radius: var(--border-radius-btn);
+            box-shadow: var(--shadow-float);
+            pointer-events: none;
+        }
+        .service-card__media {
+            overflow: hidden;
+            border-radius: 24px 24px 0 0;
+        }
+        .service-card__img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+            transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+                        filter 0.7s ease;
+        }
+        .service-card:hover .service-card__img {
+            transform: scale(1.04);
+            filter: brightness(1.04) saturate(1.02);
+        }
+        .service-card__meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            font-family: var(--font-body);
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 1.4;
+        }
+        .service-card__duration,
+        .service-card__price {
+            display: inline-flex;
+            align-items: baseline;
+            gap: 1px;
+            font-style: normal;
+            letter-spacing: 0.01em;
+        }
+        .service-card__duration {
+            color: rgba(245, 239, 228, 0.62);
+        }
+        .service-card__price {
+            color: rgba(196, 168, 130, 0.92);
+        }
+        .service-card__value {
+            font-size: inherit;
+            font-weight: inherit;
+            letter-spacing: inherit;
+            color: inherit;
+        }
+        .service-card__unit {
+            font-size: inherit;
+            font-weight: inherit;
+            text-transform: lowercase;
+            color: inherit;
+            opacity: 0.85;
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .service-card:hover {
+                transform: none;
+            }
+            .service-card:hover .service-card__img {
+                transform: none;
+                filter: none;
+            }
+        }
+        .services-grid-wrap {
+            width: min(100%, 1280px);
+            margin-left: auto;
+            margin-right: auto;
+        }
+        footer b,
+        footer strong {
+            font-weight: 600;
+            color: var(--color-text-primary);
+            font-style: normal;
+        }
+        footer .footer-title {
+            font-family: var(--font-heading);
+            font-size: var(--text-xl);
+            font-weight: 600;
+            letter-spacing: 0.14em;
+            line-height: 1.2;
+            text-transform: uppercase;
+            color: var(--color-accent-gold);
+            margin-bottom: 16px;
+        }
+        footer .footer-title--compact {
+            letter-spacing: 0.08em;
+            font-size: 20px;
+        }
+        footer .footer-logo-shell {
+            border-radius: 999px;
+            overflow: hidden;
+            transition: transform 0.35s ease, box-shadow 0.35s ease;
+        }
+        footer .footer-logo-shell:hover {
+            transform: translateY(-2px) scale(1.03);
+            box-shadow: 0 10px 24px rgba(201, 168, 127, 0.22);
+        }
+        footer .footer-logo-img {
+            border-radius: 999px;
+        }
+        @media (min-width: 1024px) {
+            footer .footer-title--compact {
+                white-space: nowrap;
+            }
+        }
+        @media (max-width: 1023px) {
+            footer .footer-title--compact {
+                white-space: normal;
+                font-size: var(--text-xl);
+                letter-spacing: 0.1em;
+            }
+        }
+        footer h4,
+        footer .font-bold {
+            font-weight: 600 !important;
+            color: var(--color-accent-gold);
+        }
+        footer .font-semibold,
+        footer .footer-branch-name {
+            font-weight: 600 !important;
+            color: var(--color-text-primary) !important;
+        }
+        footer .footer-region {
+            font-weight: 600 !important;
+            color: var(--color-text-primary) !important;
+            letter-spacing: 0.12em;
+        }
+        footer .footer-tagline {
+            font-weight: 400;
+        }
+        footer .footer-tagline b {
+            font-weight: 700;
+            color: #F5EFE4;
+        }
+        .booking-layout {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+            align-items: start;
+            width: min(100%, 1500px);
+            margin: 0 auto;
+        }
+        .booking-media__inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            min-height: 310px;
+            overflow: hidden;
+            border-radius: 40px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.45);
+        }
+        .booking-media__inner img {
+            width: 100%;
+            height: 100%;
+            min-height: inherit;
+            object-fit: cover;
+            display: block;
+        }
+        .booking-panel {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgba(196, 168, 130, 0.35);
+            border-radius: 24px;
+            padding: 32px 40px;
+            height: auto;
+            min-height: 0;
+        }
+        .booking-panel__header {
+            flex-shrink: 0;
+            margin-bottom: 40px;
+        }
+        .booking-form {
+            flex: 0 1 auto;
+            display: flex;
+            flex-direction: column;
+            min-height: auto;
+            height: auto;
+        }
+        .booking-form__body {
+            flex: 0 1 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 34px;
+            min-height: auto;
+        }
+        .booking-form__submit {
+            flex-shrink: 0;
+            margin-top: 40px;
+            padding-top: 0;
+        }
+        @media (min-width: 1024px) {
+            .booking-layout {
+                grid-template-columns: 1fr 1fr;
+                min-height: 0;
+                gap: 40px;
+                align-items: start;
+            }
+            .booking-media,
+            .booking-panel {
+                width: 100%;
+                height: auto;
+                min-height: 0;
+            }
+            .booking-media__inner {
+                height: auto;
+                min-height: 340px;
+            }
+            .booking-panel {
+                height: auto;
+                min-height: 0;
+            }
+        }
+        @media (max-width: 1023px) {
+            .booking-panel {
+                min-height: auto;
+                height: auto;
+                padding: 28px 24px;
+            }
+            .booking-form__body {
+                justify-content: flex-start;
+                gap: 22px;
+            }
+            .booking-form__submit {
+                margin-top: 40px;
+                padding-top: 0;
+            }
+        }
+        .booking-field {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .booking-label {
+            font-family: var(--font-body);
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: rgba(196, 168, 130, 0.8);
+        }
+        .booking-form .booking-input,
+        .booking-form .booking-select {
+            width: 100%;
+            background-color: transparent !important;
+            background-image: none;
+            border: 1px solid rgba(92, 72, 48, 0.45) !important;
+            border-radius: 100px;
+            padding: 13px 20px;
+            color: var(--color-text-primary);
+            font-family: var(--font-body);
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 1.4;
+            box-shadow: none !important;
+            --tw-ring-shadow: 0 0 #0000 !important;
+            --tw-ring-color: transparent !important;
+            transition:
+                border-color 0.3s ease,
+                box-shadow 0.3s ease;
+        }
+        .booking-form .booking-input::placeholder {
+            color: rgba(245, 239, 228, 0.38);
+            font-weight: 300;
+            opacity: 1;
+        }
+        .booking-form .booking-input:hover,
+        .booking-form .booking-select:hover {
+            border-color: rgba(125, 95, 65, 0.55) !important;
+            background-color: transparent !important;
+        }
+        .booking-form .booking-input:focus,
+        .booking-form .booking-select:focus {
+            outline: none !important;
+            border-color: rgba(196, 168, 130, 0.5) !important;
+            background-color: transparent !important;
+            box-shadow: 0 0 0 3px rgba(61, 47, 30, 0.2) !important;
+        }
+        .booking-form .booking-input:-webkit-autofill,
+        .booking-form .booking-input:-webkit-autofill:hover,
+        .booking-form .booking-input:-webkit-autofill:focus {
+            -webkit-box-shadow: 0 0 0 1000px var(--color-bg-primary) inset !important;
+            -webkit-text-fill-color: var(--color-text-primary) !important;
+            caret-color: var(--color-text-primary);
+            border: 1px solid rgba(92, 72, 48, 0.45) !important;
+        }
+        .booking-form .booking-select {
+            appearance: none;
+            padding-right: 48px;
+            cursor: pointer;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23F5EFE4' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") !important;
+            background-repeat: no-repeat !important;
+            background-position: right 20px center !important;
+            background-size: 14px !important;
+        }
+        .booking-form .booking-input:invalid,
+        .booking-form .booking-select:invalid {
+            color: rgba(245, 239, 228, 0.38);
+        }
+        .booking-form .booking-input:valid,
+        .booking-form .booking-select:valid {
+            color: var(--color-text-primary);
+        }
+        .booking-form .booking-input:invalid::placeholder {
+            color: rgba(245, 239, 228, 0.38);
+        }
+        .booking-form .booking-select option {
+            background: var(--color-bg-primary);
+            color: var(--color-text-primary);
+        }
+        .booking-form .booking-select option[disabled] {
+            color: rgba(245, 239, 228, 0.38);
+        }
+        .booking-form .booking-input--date,
+        .booking-form .booking-input[type="time"] {
+            color-scheme: dark;
+            padding-right: 52px;
+            background-repeat: no-repeat;
+            background-position: right 18px center;
+            background-size: 22px 22px;
+        }
+        .booking-form .booking-input--date {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 24 24' fill='none' stroke='%23A89278' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2'/%3E%3Cpath d='M16 2v4M8 2v4M3 10h18'/%3E%3C/svg%3E");
+        }
+        .booking-form .booking-input[type="time"] {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 24 24' fill='none' stroke='%23A89278' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='M12 7v5l3 2'/%3E%3C/svg%3E");
+        }
+        .booking-form .booking-input[type="time"]:invalid::-webkit-datetime-edit {
+            color: rgba(245, 239, 228, 0.38);
+        }
+        .booking-form .booking-input[type="time"]:valid::-webkit-datetime-edit {
+            color: var(--color-text-primary);
+        }
+        .booking-form .booking-input[type="time"]::-webkit-calendar-picker-indicator {
+            opacity: 0;
+            position: absolute;
+            right: 0;
+            width: 52px;
+            height: 100%;
+            cursor: pointer;
+        }
+        .booking-form .booking-field:has(.booking-input--date),
+        .booking-form .booking-field:has(.booking-input[type="time"]) {
+            position: relative;
+        }
+        .booking-form .booking-input--date:hover,
+        .booking-form .booking-input[type="time"]:hover {
+            background-size: 22px 22px;
+        }
+        .booking-form .booking-input--date:focus {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 24 24' fill='none' stroke='%23C4A882' stroke-width='1.65' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2'/%3E%3Cpath d='M16 2v4M8 2v4M3 10h18'/%3E%3C/svg%3E");
+        }
+        .booking-form .booking-input[type="time"]:focus {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 24 24' fill='none' stroke='%23C4A882' stroke-width='1.65' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='M12 7v5l3 2'/%3E%3C/svg%3E");
+        }
+        .booking-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+        }
+        .booking-modal {
+            position: fixed;
+            inset: 0;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            background: rgba(13, 13, 11, 0.78);
+            backdrop-filter: blur(6px);
+            z-index: 80;
+        }
+        .booking-modal.is-open {
+            display: flex;
+        }
+        .booking-modal__panel {
+            width: min(100%, 640px);
+            max-height: min(88vh, 860px);
+            overflow-y: auto;
+            border: 1px solid rgba(196, 168, 130, 0.35);
+            border-radius: 24px;
+            background: var(--color-bg-primary);
+            padding: 28px 28px 24px;
+            box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+        }
+        .booking-modal__header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 16px;
+            margin-bottom: 18px;
+        }
+        .booking-modal__title {
+            margin: 0;
+            color: var(--color-text-primary);
+        }
+        .booking-modal__subtitle {
+            margin: 6px 0 0;
+            color: var(--color-text-body);
+        }
+        .booking-modal__close {
+            border: 1px solid rgba(196, 168, 130, 0.35);
+            background: transparent;
+            color: var(--color-text-primary);
+            border-radius: 999px;
+            width: 36px;
+            height: 36px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: border-color 0.2s ease, color 0.2s ease;
+        }
+        .booking-modal__close:hover {
+            border-color: rgba(196, 168, 130, 0.6);
+            color: #ffffff;
+        }
+        @media (max-width: 640px) {
+            .booking-row {
+                grid-template-columns: 1fr;
+            }
+            .booking-modal {
+                padding: 16px;
+            }
+            .booking-modal__panel {
+                padding: 22px 18px 18px;
+            }
+        }
+        .visual-hook-label {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+            font-family: var(--font-body);
+            font-weight: 300;
+            font-size: 14px;
+            letter-spacing: 0.18em;
+            text-transform: none;
+            color: rgba(196, 168, 130, 0.75);
+        }
+        .visual-hook-label::before {
+            content: '';
+            display: inline-block;
+            width: 28px;
+            height: 1px;
+            background: #C4A882;
+            opacity: 0.6;
+            flex-shrink: 0;
+        }
+        .visual-hook-image-wrap {
+            border-radius: 4px;
+            box-shadow: 0 24px 60px rgba(20, 16, 10, 0.45);
+            overflow: hidden;
+            transition: box-shadow 0.6s ease;
+        }
+        .visual-hook-image-wrap img {
+            border-radius: 4px;
+            transition: transform 1.1s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                        filter 1.1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            will-change: transform, filter;
+        }
+        .visual-hook-image-wrap:hover {
+            box-shadow: 0 28px 70px rgba(20, 16, 10, 0.55);
+        }
+        .visual-hook-image-wrap:hover img {
+            transform: scale(1.05);
+            filter: brightness(1.06) contrast(1.03) saturate(1.05);
+        }
+        .visual-hook-headline {
+            margin-bottom: 32px;
+        }
+        .visual-hook-body p {
+            max-width: 520px;
+            line-height: 1.95;
+            color: rgba(245, 239, 228, 0.68);
+        }
+        .visual-hook-body p:first-child {
+            margin-bottom: 20px;
+        }
+        .visual-hook-anchor {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 32px;
+            font-family: var(--font-body);
+            font-weight: 300;
+            font-size: 13px;
+            letter-spacing: 0.12em;
+            color: #C4A882;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(196, 168, 130, 0.3);
+            padding-bottom: 2px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .visual-hook-anchor:hover {
+            color: #F5EFE4;
+            border-bottom-color: rgba(245, 239, 228, 0.4);
+        }
+    </style>
+</head><body id="top" class="bg-background text-on-background font-body-md antialiased">
+<!-- TopAppBar -->
+<header class="sticky top-0 w-full z-50 bg-bg-primary backdrop-blur-md border-b border-outline-variant transition-all duration-500">
+<div class="max-w-container-max mx-auto px-margin-mobile xl:px-margin-desktop flex justify-between items-center flex-row" style="display:flex;flex-direction:row;align-items:center;justify-content:space-between;padding:16px 40px;height:auto;min-height:unset;max-height:unset;">
+<a href="#top" class="logo-wrapper navbar-brand brand-logo logo flex items-center no-underline" style="display:flex;flex-direction:row;align-items:center;gap:10px;background:transparent;border:none;box-shadow:none;padding:0;margin:0;line-height:1;text-decoration:none;">
+<img alt="AURA SANCTUARY" class="brand-logo-img" src="image/spa_logo_transparent.png" style="display:block;width:48px;height:48px;object-fit:contain;background:transparent;border:none;box-shadow:none;padding:0;margin:0;">
+<span class="text-[10px] uppercase tracking-[0.2em] text-on-surface-variant/80 font-label-md w-full text-center">Tựa Mình</span></a>
+<nav class="hidden md:flex items-center gap-14">
+<a class="nav-link text-on-surface-variant border-b border-transparent pb-1 font-label-md text-label-md uppercase tracking-widest hover:text-secondary transition-colors duration-500" href="#trai-nghiem-bat-dau">Trải nghiệm</a>
+<a class="nav-link text-on-surface-variant border-b border-transparent pb-1 font-label-md text-label-md uppercase tracking-widest hover:text-secondary transition-colors duration-500" href="#dich-vu">DỊch vụ</a>
+<a class="nav-link text-on-surface-variant border-b border-transparent pb-1 font-label-md text-label-md uppercase tracking-widest hover:text-secondary transition-colors duration-500" href="#loi-thi-tham">Lời thì thầm</a>
+<a class="nav-link text-on-surface-variant border-b border-transparent pb-1 font-label-md text-label-md uppercase tracking-widest hover:text-secondary transition-colors duration-500" href="#ve-chung-toi">Về chúng tôi</a>
+</nav>
+<div class="flex items-center gap-8">
+<a class="btn-rounded bg-primary-container text-on-primary font-label-md text-label-md uppercase px-8 py-4 tracking-widest active:scale-[0.99] transition-transform duration-300" href="#booking">Đặt lịch ngay</a>
+</div>
+</div>
+</header>
+<!-- Section 1: Hero -->
+<section class="hero relative h-[85vh] min-h-[700px] flex items-center overflow-hidden transition-all duration-1000 opacity-100" id="trai-nghiem">
+<div class="hero-image-wrap absolute inset-0 z-0">
+<img alt="Tựa Mình Spa hero" class="hero-image w-full h-full object-cover" src="image/z5210446413660_9d35cb0cc4cf48fec4ab28a6e7022185-2048x1536.webp" style="width:100%; height:100%; object-fit:cover; object-position:center center; image-rendering:-webkit-optimize-contrast;">
+</div>
+<div class="relative z-20 max-w-container-max mx-auto px-margin-mobile xl:px-margin-desktop w-full">
+<div class="max-w-4xl">
+<span class="inline-block font-body-md mb-6" style="font-family:var(--font-body);font-weight:500;font-size:14px;letter-spacing:0.18em;color:rgba(245, 239, 228, 0.92);text-transform:none;text-shadow:0 1px 10px rgba(20,20,16,0.45);"><span style="display:inline-block;width:28px;height:1px;background:#C4A882;vertical-align:middle;margin-right:12px;"></span>Hơn 5000 giờ đón lại mỏi mệt để trả về an yên</span>
+<h1 class="font-display-lg text-display-lg xl:text-[96px] mb-8 leading-tight" style="color:#F5EFE4;text-shadow:0 2px 20px rgba(20, 20, 16, 0.5),0 1px 4px rgba(20, 20, 16, 0.4);">Trút Bỏ<br>Ngàn Gánh Nặng</h1>
+<p class="font-body-lg text-body-lg mb-12" style="color:rgba(245, 239, 228, 0.90);text-shadow:0 1px 12px rgba(20, 20, 16, 0.6);max-width:520px;">Đánh tan mọi mỏi mệt sau những phút giây gồng mình, nhẹ nhàng vỗ về cơ thể bằng liệu pháp massage dưỡng sinh và trị liệu chuyên sâu.</p>
+<a class="hero-cta btn-rounded inline-block uppercase" href="#booking">Đặt lịch ngay</a>
+</div>
+</div>
+</section>
+<!-- Visual Hook Section -->
+<section class="flex flex-col lg:flex-row overflow-hidden bg-bg-secondary transition-all duration-1000 opacity-100" id="trai-nghiem-bat-dau">
+<div class="max-w-container-max mx-auto px-margin-mobile xl:px-margin-desktop w-full">
+<div class="flex flex-col lg:flex-row items-center gap-gutter py-16 xl:py-20">
+<!-- Image Column -->
+<div class="w-full lg:w-1/2 flex justify-center items-center p-4 lg:p-8">
+<div class="visual-hook-image-wrap w-full aspect-[3/4] overflow-hidden max-w-lg">
+<img alt="Close up of candle and stones" class="w-full h-full object-cover" src="image/61-home-2.webp">
+</div>
+</div>
+<!-- Text Column -->
+<div class="w-full lg:w-1/2 flex items-center justify-center lg:justify-start">
+<div class="max-w-2xl text-center lg:text-left">
+<span class="visual-hook-label">Trải nghiệm của bạn bắt đầu từ đây</span>
+<h2 class="visual-hook-headline font-display-lg text-primary leading-tight font-light text-headline-xl">Phía sau cánh cửa, thế giới vội vã dừng lại...</h2>
+<div class="visual-hook-body font-body-lg text-body-lg">
+<p class="">Tại đây, không có tiếng còi xe hối hả, không có những chiếc deadline dồn dập bắt bạn phải gồng mình mạnh mẽ. Trải nghiệm tại "Tựa Mình" được dệt nên từ những điều nguyên bản nhất: tiếng nhạc thiền tần số chữa lành, mùi hương thảo mộc thanh nhẹ quấn quýt trong không gian, và một ngụm trà ấm giúp bạn dọn dẹp những lao xao trong tâm trí.</p>
+<p class="">Bạn chỉ cần bước vào, hạ đôi vai xuống, và cho phép chúng tôi đón lấy những mỏi mệt của bạn.</p>
+<a class="visual-hook-anchor" href="#dich-vu">Khám phá liệu trình <span aria-hidden="true">→</span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Unique Mechanism — Zigzag Timeline -->
+<section class="process-section relative overflow-hidden transition-all duration-1000 opacity-100">
+<div class="process-section__inner relative z-10">
+<header class="process-section__header">
+<span class="inline-block font-label-md text-label-md text-on-surface-variant/60 uppercase tracking-[0.3em] mb-4">QUY TRÌNH TRỊ LIỆU ĐỘC QUYỀN</span>
+<h2 class="process-headline-glow font-display-lg text-headline-xl text-primary-container font-semibold mb-6">Hành trình trút bỏ mọi gánh nặng</h2>
+<p class="font-body-md text-on-surface-variant/70">Ba tầng tác động — thiết kế theo đúng cách cơ thể cần được chữa lành.</p>
+<div class="process-section__divider" aria-hidden="true"></div>
+</header>
+<div class="timeline-steps">
+<div class="timeline-line" aria-hidden="true"></div>
+<article class="timeline-step timeline-step--1">
+<div class="marker-wrapper timeline-marker">
+<span class="timeline-marker-outer timeline-marker-outer--1" aria-hidden="true"></span>
+<span class="timeline-marker-gap timeline-marker-gap--1" aria-hidden="true"></span>
+<span class="timeline-marker-center timeline-marker-center--1" aria-hidden="true"></span>
+</div>
+<div class="timeline-step__image">
+<img alt="Cleansing ritual" class="timeline-step__img timeline-step__img--from-left" src="image/goidau3.avif">
+</div>
+<div class="timeline-step__content">
+<span class="timeline-step__number" aria-hidden="true">01</span>
+<span class="material-symbols-outlined timeline-step__icon">spa</span>
+<h3 class="timeline-step__title">Khơi thông</h3>
+<span class="timeline-step__subtitle">Làm sạch &amp; Khởi đầu</span>
+<span class="timeline-step__accent-line" aria-hidden="true"></span>
+<p class="timeline-step__body">Loại bỏ bụi trần và những mỏi mệt tích tụ qua làn nước thảo mộc ấm áp, mở đường cho hành trình tái tạo năng lượng.</p>
+</div>
+</article>
+<article class="timeline-step timeline-step--2">
+<div class="marker-wrapper timeline-marker">
+<span class="timeline-marker-outer timeline-marker-outer--2" aria-hidden="true"></span>
+<span class="timeline-marker-gap timeline-marker-gap--2" aria-hidden="true"></span>
+<span class="timeline-marker-center timeline-marker-center--2" aria-hidden="true"></span>
+</div>
+<div class="timeline-step__content">
+<span class="timeline-step__number" aria-hidden="true">02</span>
+<span class="material-symbols-outlined timeline-step__icon">self_improvement</span>
+<h3 class="timeline-step__title">Giải tỏa</h3>
+<span class="timeline-step__subtitle">Giải phóng &amp; Phục hồi</span>
+<span class="timeline-step__accent-line" aria-hidden="true"></span>
+<p class="timeline-step__body">Kỹ thuật massage chuyên sâu tác động vào các điểm tắc nghẽn, trả lại sự linh hoạt và nhẹ nhõm cho từng thớ cơ.</p>
+</div>
+<div class="timeline-step__image">
+<img alt="Deep tissue session" class="timeline-step__img timeline-step__img--from-right" src="image/massage2.avif">
+</div>
+</article>
+<article class="timeline-step timeline-step--3">
+<div class="marker-wrapper timeline-marker">
+<span class="timeline-marker-outer timeline-marker-outer--3" aria-hidden="true"></span>
+<span class="timeline-marker-gap timeline-marker-gap--3" aria-hidden="true"></span>
+<span class="timeline-marker-center timeline-marker-center--3" aria-hidden="true"></span>
+</div>
+<div class="timeline-step__image">
+<img alt="Aromatherapy session" class="timeline-step__img timeline-step__img--from-left" src="image/about.avif">
+</div>
+<div class="timeline-step__content">
+<span class="timeline-step__number" aria-hidden="true">03</span>
+<span class="material-symbols-outlined timeline-step__icon">potted_plant</span>
+<h3 class="timeline-step__title">Nuôi dưỡng</h3>
+<span class="timeline-step__subtitle">Hương liệu pháp — Aromatherapy</span>
+<span class="timeline-step__accent-line" aria-hidden="true"></span>
+<p class="timeline-step__body">Tinh dầu organic thẩm thấu qua da, xoa dịu hệ thần kinh và đưa cơ thể vào trạng thái thư giãn sâu nhất.</p>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- Section 3: Services & Pricing (Massage) -->
+<section class="bg-bg-secondary py-16 xl:py-24 transition-all duration-1000 opacity-100" id="dich-vu">
+<div class="max-w-container-max mx-auto px-margin-mobile xl:px-margin-desktop">
+<div class="text-center mb-16 lg:mb-20">
+<h2 class="font-headline-xl text-headline-xl text-primary mb-6">Dịch vụ Massage</h2>
+</div>
+<div class="services-grid-wrap grid grid-cols-1 lg:grid-cols-3 gap-gutter">
+<!-- Pricing Card 1 -->
+<div class="service-card border border-outline-variant bg-surface-container-lowest">
+<div class="service-card__media">
+<img alt="Relaxation Massage" class="service-card__img" src="image/massage1.avif">
+</div>
+<div class="flex flex-col flex-grow p-8">
+<div class="mb-6">
+<span class="font-label-md text-on-surface-variant uppercase tracking-widest block mb-4 text-[18px]">Phục hồi cơ bản</span>
+<div class="service-card__meta">
+<span class="service-card__duration"><span class="service-card__value">60</span><span class="service-card__unit">p</span></span>
+<span class="service-card__price"><span class="service-card__value">399</span><span class="service-card__unit">K</span></span>
+</div>
+</div>
+<ul class="space-y-4 mb-8">
+<li class="flex items-center gap-4 text-on-surface-variant text-[15px] font-normal"><span class="material-symbols-outlined text-secondary text-xl">check</span>Phòng mặc định</li>
+<li class="flex items-center gap-4 text-on-surface-variant text-[15px] font-normal"><span class="material-symbols-outlined text-secondary text-xl">check</span>Massage cơ bản</li>
+<li class="flex items-center gap-4 text-on-surface-variant text-[15px] font-normal"><span class="material-symbols-outlined text-secondary text-xl">check</span>Ăn nhẹ trái cây theo mùa</li>
+</ul>
+<a class="service-book-btn btn-rounded mt-auto w-full py-5 bg-accent-green text-text-primary font-label-md text-label-md uppercase tracking-widest text-center hover:bg-accent-green-hover transition-all duration-300 shadow-float" data-service="phuc-hoi-co-ban" href="#booking">Đặt lịch ngay</a>
+</div>
+</div>
+<!-- Pricing Card 2 (Popular) -->
+<div class="service-card service-card--featured border border-secondary bg-surface-container-lowest">
+<span class="service-card__badge">Phổ biến</span>
+<div class="service-card__media">
+<img alt="Deep Tissue Therapy" class="service-card__img" src="image/massage5-v2.avif">
+</div>
+<div class="flex flex-col flex-grow p-8">
+<div class="mb-6">
+<span class="font-label-md text-on-surface-variant uppercase tracking-widest block mb-4 text-[18px]">Phục hồi nâng cao</span>
+<div class="service-card__meta">
+<span class="service-card__duration"><span class="service-card__value">80</span><span class="service-card__unit">p</span></span>
+<span class="service-card__price"><span class="service-card__value">530</span><span class="service-card__unit">K</span></span>
+</div>
+</div>
+<ul class="space-y-4 mb-8">
+<li class="flex items-center gap-4 text-on-surface-variant text-[15px] font-normal"><span class="material-symbols-outlined text-secondary text-xl">check</span>Phòng mặc định</li>
+<li class="flex items-center gap-4 text-on-surface-variant text-[15px] font-normal"><span class="material-symbols-outlined text-secondary text-xl">check</span>Massage cơ bản</li>
+<li class="flex items-center gap-4 text-on-surface-variant text-[15px] font-normal"><span class="material-symbols-outlined text-secondary text-xl">check</span>Ăn trái cây theo mùa</li>
+</ul>
+<a class="service-book-btn btn-rounded mt-auto w-full py-5 bg-accent-green text-text-primary font-label-md text-label-md uppercase tracking-widest text-center hover:bg-accent-green-hover transition-all duration-300 shadow-float" data-service="phuc-hoi-nang-cao" href="#booking">Đặt lịch ngay</a>
+</div>
+</div>
+<!-- Pricing Card 3 -->
+<div class="service-card border border-outline-variant bg-surface-container-lowest">
+<div class="service-card__media">
+<img alt="Hot Stone Ritual" class="service-card__img" src="image/massage4-v2.avif">
+</div>
+<div class="flex flex-col flex-grow p-8">
+<div class="mb-6">
+<span class="font-label-md text-on-surface-variant uppercase tracking-widest block mb-4 text-[18px]">Trị liệu phục hồi</span>
+<div class="service-card__meta">
+<span class="service-card__duration"><span class="service-card__value">90</span><span class="service-card__unit">p</span></span>
+<span class="service-card__price"><span class="service-card__value">800</span><span class="service-card__unit">K</span></span>
+</div>
+</div>
+<ul class="space-y-4 mb-8">
+<li class="flex items-center gap-4 text-on-surface-variant text-[15px] font-normal"><span class="material-symbols-outlined text-secondary text-xl">check</span>Phòng V.I.P</li>
+<li class="flex items-center gap-4 text-on-surface-variant text-[15px] font-normal"><span class="material-symbols-outlined text-secondary text-xl">check</span>Massage phục hồi</li>
+<li class="flex items-center gap-4 text-on-surface-variant text-[15px] font-normal"><span class="material-symbols-outlined text-secondary text-xl">check</span>Ăn nhẹ trái cây theo mùa</li>
+</ul>
+<a class="service-book-btn btn-rounded mt-auto w-full py-5 bg-accent-green text-text-primary font-label-md text-label-md uppercase tracking-widest text-center hover:bg-accent-green-hover transition-all duration-300 shadow-float" data-service="tri-lieu-phuc-hoi" href="#booking">đặt lịch ngay</a>
+</div>
+</div>
+</div>
+<div class="services-grid-wrap grid grid-cols-1 lg:grid-cols-3 gap-gutter mt-8">
+<!-- Additional Cards 4, 5, 6 -->
+<div class="service-card border border-outline-variant bg-surface-container-lowest">
+<div class="service-card__media">
+<img alt="Aromatherapy Bliss" class="service-card__img" src="image/massage3.avif">
+</div>
+<div class="flex flex-col flex-grow p-8">
+<div class="mb-6"><span class="font-label-md text-on-surface-variant uppercase tracking-widest block mb-4 text-[18px]">Massage phục hồi</span><div class="service-card__meta"><span class="service-card__duration"><span class="service-card__value">90</span><span class="service-card__unit">p</span></span><span class="service-card__price"><span class="service-card__value">900</span><span class="service-card__unit">K</span></span></div></div>
+<ul class="space-y-4 mb-8">
+<li class="flex items-center gap-4 text-on-surface-variant text-[15px] font-normal"><span class="material-symbols-outlined text-secondary text-xl">check</span>Phòng V.I.P</li>
+<li class="flex items-center gap-4 text-on-surface-variant text-[15px] font-normal"><span class="material-symbols-outlined text-secondary text-xl">check</span>Massage phục hồi chuyên sâu</li>
+<li class="flex items-center gap-4 text-on-surface-variant text-[15px] font-normal"><span class="material-symbols-outlined text-secondary text-xl">check</span>Ăn nhẹ trái cây theo mùa</li>
+</ul>
+<a class="service-book-btn btn-rounded mt-auto w-full py-5 bg-accent-green text-text-primary font-label-md text-label-md uppercase tracking-widest text-center hover:bg-accent-green-hover transition-all duration-300 shadow-float" data-service="massage-phuc-hoi" href="#booking">Đặt lịch ngay</a>
+</div>
+</div>
+<div class="service-card border border-outline-variant bg-surface-container-lowest">
+<div class="service-card__media">
+<img alt="Himalayan Salt Scrub" class="service-card__img" src="image/massage6.avif">
+</div>
+<div class="flex flex-col flex-grow p-8">
+<div class="mb-6"><span class="font-label-md text-on-surface-variant uppercase tracking-widest block mb-4 text-[18px]">Massage phục hồi chuyên sâu</span><div class="service-card__meta"><span class="service-card__duration"><span class="service-card__value">90</span><span class="service-card__unit">p</span></span><span class="service-card__price"><span class="service-card__value">1.200</span><span class="service-card__unit">K</span></span></div></div>
+<ul class="space-y-4 mb-8">
+<li class="flex items-center gap-4 text-on-surface-variant text-[15px] font-normal"><span class="material-symbols-outlined text-secondary text-xl">check</span>Phòng V.I.P</li>
+<li class="flex items-center gap-4 text-on-surface-variant text-[15px] font-normal"><span class="material-symbols-outlined text-secondary text-xl">check</span>Massage phục hồi (Nhân viên ưu tú)</li>
+<li class="flex items-center gap-4 text-on-surface-variant text-[15px] font-normal"><span class="material-symbols-outlined text-secondary text-xl">check</span>Thưởng thức bánh kẹo đặc biệt</li>
+</ul>
+<a class="service-book-btn btn-rounded mt-auto w-full py-5 bg-accent-green text-text-primary font-label-md text-label-md uppercase tracking-widest text-center hover:bg-accent-green-hover transition-all duration-300 shadow-float" data-service="massage-phuc-hoi-chuyen-sau" href="#booking">Đặt lịch ngay</a>
+</div>
+</div>
+<div class="service-card border border-outline-variant bg-surface-container-lowest">
+<div class="service-card__media">
+<img alt="Traditional Thai Massage" class="service-card__img" src="image/massage7.avif">
+</div>
+<div class="flex flex-col flex-grow p-8">
+<div class="mb-6"><span class="font-label-md text-on-surface-variant uppercase tracking-widest block mb-4 text-[18px]">Massage trị liệu toàn diện</span><div class="service-card__meta"><span class="service-card__duration"><span class="service-card__value">120</span><span class="service-card__unit">p</span></span><span class="service-card__price"><span class="service-card__value">2.000</span><span class="service-card__unit">K</span></span></div></div>
+<ul class="space-y-4 mb-8">
+<li class="flex items-center gap-4 text-on-surface-variant text-[15px] font-normal"><span class="material-symbols-outlined text-secondary text-xl">check</span>Phòng V.I.P</li>
+<li class="flex items-center gap-4 text-on-surface-variant text-[15px] font-normal"><span class="material-symbols-outlined text-secondary text-xl">check</span>Massage phục hồi chuyên sâu (Nhân viên xuất sắc)</li>
+<li class="flex items-center gap-4 text-on-surface-variant text-[15px] font-normal"><span class="material-symbols-outlined text-secondary text-xl">check</span>Thưởng thức ẩm thực đặc biệt</li>
+</ul>
+<a class="service-book-btn btn-rounded mt-auto w-full py-5 bg-accent-green text-text-primary font-label-md text-label-md uppercase tracking-widest text-center hover:bg-accent-green-hover transition-all duration-300 shadow-float" data-service="massage-tri-lieu-toan-dien" href="#booking">đặt lịch ngay</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Services & Pricing (Dưỡng Sinh) -->
+<section class="bg-bg-primary py-8 xl:py-12 transition-all duration-1000 opacity-100">
+<div class="max-w-container-max mx-auto px-margin-mobile xl:px-margin-desktop">
+<div class="text-center mb-16 lg:mb-20">
+<h2 class="font-headline-xl text-headline-xl text-primary mb-6">Dịch vụ Dưỡng Sinh</h2>
+</div>
+<div class="services-grid-wrap grid grid-cols-1 lg:grid-cols-3 gap-gutter">
+<div class="service-card border border-outline-variant bg-surface-container-lowest">
+<div class="service-card__media">
+<img alt="Relaxation" class="service-card__img" src="image/goidau1.avif">
+</div>
+<div class="flex flex-col flex-grow p-8">
+<div class="mb-6"><span class="font-label-md text-on-surface-variant uppercase tracking-widest block mb-4 text-[18px]">Gội dưỡng sinh cơ bản</span><div class="service-card__meta"><span class="service-card__duration"><span class="service-card__value">30</span><span class="service-card__unit">p</span></span><span class="service-card__price"><span class="service-card__value">130</span><span class="service-card__unit">K</span></span></div></div>
+<ul class="space-y-4 mb-8">
+
+<li class="flex items-center gap-4 text-on-surface-variant text-[15px] font-normal"><span class="material-symbols-outlined text-secondary text-xl">check</span>Gội đầu cơ bản</li>
+</ul>
+<a class="service-book-btn btn-rounded mt-auto w-full py-5 bg-accent-green text-text-primary font-label-md text-label-md uppercase tracking-widest text-center hover:bg-accent-green-hover transition-all duration-300 shadow-float" data-service="goi-duong-sinh-co-ban" href="#booking">đặt lịch ngay</a>
+</div>
+</div>
+<div class="service-card service-card--featured border border-secondary bg-surface-container-lowest">
+<div class="service-card__media">
+<img alt="Deep Tissue" class="service-card__img" src="image/spa2.avif">
+</div>
+<div class="flex flex-col flex-grow p-8">
+<div class="mb-6"><span class="font-label-md text-on-surface-variant uppercase tracking-widest block mb-4 text-[18px]">Lấy ráy tai cơ bản</span><div class="service-card__meta"><span class="service-card__duration"><span class="service-card__value">30</span><span class="service-card__unit">p</span></span><span class="service-card__price"><span class="service-card__value">120</span><span class="service-card__unit">K</span></span></div></div>
+<ul class="space-y-4 mb-8">
+
+<li class="flex items-center gap-4 text-on-surface-variant text-[15px] font-normal"><span class="material-symbols-outlined text-secondary text-xl">check</span>Lấy ráy tai cơ bản</li>
+</ul>
+<a class="service-book-btn btn-rounded mt-auto w-full py-5 bg-accent-green text-text-primary font-label-md text-label-md uppercase tracking-widest text-center hover:bg-accent-green-hover transition-all duration-300 shadow-float" data-service="lay-ray-tai-co-ban" href="#booking">đặt lịch ngay</a>
+</div>
+</div>
+<div class="service-card border border-outline-variant bg-surface-container-lowest">
+<div class="service-card__media">
+<img alt="Gội dưỡng sinh cao cấp" class="service-card__img" src="image/goidau4.avif">
+</div>
+<div class="flex flex-col flex-grow p-8">
+<div class="mb-6"><span class="font-label-md text-on-surface-variant uppercase tracking-widest block mb-4 text-[18px]">Gội dưỡng sinh cao cấp</span><div class="service-card__meta"><span class="service-card__duration"><span class="service-card__value">60</span><span class="service-card__unit">p</span></span><span class="service-card__price"><span class="service-card__value">250</span><span class="service-card__unit">K</span></span></div></div>
+<ul class="space-y-4 mb-8">
+<li class="flex items-center gap-4 text-on-surface-variant text-[15px] font-normal"><span class="material-symbols-outlined text-secondary text-xl">check</span>Gội đầu cao cấp</li>
+<li class="flex items-center gap-4 text-on-surface-variant text-[15px] font-normal"><span class="material-symbols-outlined text-secondary text-xl">check</span>Thư giãn cổ vai gáy</li>
+</ul>
+<a class="service-book-btn btn-rounded mt-auto w-full py-5 bg-accent-green text-text-primary font-label-md text-label-md uppercase tracking-widest text-center hover:bg-accent-green-hover transition-all duration-300 shadow-float" data-service="goi-duong-sinh-cao-cap" href="#booking">đặt lịch ngay</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Social Proof -->
+<section class="bg-bg-secondary py-16 xl:py-24 overflow-hidden transition-all duration-1000 opacity-100" id="loi-thi-tham">
+<div class="max-w-container-max mx-auto px-margin-mobile xl:px-margin-desktop">
+<div class="text-center mb-12 xl:mb-16">
+<h2 class="font-display-lg text-headline-xl text-primary font-light mb-4">Lời thì thầm từ những tâm hồn được <b>xoa dịu</b></h2>
+<p class="font-body-md text-on-surface-variant/70">⭐ 4.9/5 từ 200+ đánh giá thực tế</p>
+</div>
+<div class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 lg:grid-cols-4"><!-- Card 1 -->
+<div class="bg-bg-surface border border-border-subtle rounded-[12px] overflow-hidden shadow-card">
+<div class="relative h-[250px]">
+<img alt="Chị Minh Anh" class="w-full h-full object-cover" src="image/massage1.avif">
+<div class="absolute inset-0 bg-accent-gold-muted"></div>
+</div>
+<div class="px-6 py-6">
+<div class="text-accent-gold text-[40px] leading-none mb-2 font-serif">“</div>
+<p class="font-headline-lg italic text-[15px] leading-[1.7] text-text-body mb-4">Lần đầu tiên sau nhiều tháng, tôi đã có thể ngủ một giấc thật sâu mà không trằn trọc. Đôi bàn tay của kỹ thuật viên như thấu hiểu chính xác từng điểm đau trên cơ thể tôi.</p>
+<div class="w-full h-px bg-border-subtle mb-4"></div>
+<span class="text-[14px] font-bold text-text-primary">Chị Minh Anh</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-bg-surface border border-border-subtle rounded-[12px] overflow-hidden shadow-card">
+<div class="relative h-[250px]">
+<img alt="Anh Thanh Hưng" class="w-full h-full object-cover" src="image/massage2.avif">
+<div class="absolute inset-0 bg-accent-gold-muted"></div>
+</div>
+<div class="px-6 py-6">
+<div class="text-accent-gold text-[40px] leading-none mb-2 font-serif">“</div>
+<p class="font-headline-lg italic text-[15px] leading-[1.7] text-text-body mb-4">Vai và gáy tôi từng cứng đến mức bác sĩ chỉ định trị liệu. Sau 3 buổi Deep Tissue, tôi cảm nhận rõ rệt sự nhẹ nhõm và linh hoạt mà trước đây tôi chưa từng có được.</p>
+<div class="w-full h-px bg-border-subtle mb-4"></div>
+<span class="text-[14px] font-bold text-text-primary">Anh Thanh Hưng</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-bg-surface border border-border-subtle rounded-[12px] overflow-hidden shadow-card">
+<div class="relative h-[250px]">
+<img alt="Chị Lan Phương" class="w-full h-full object-cover" src="image/massage3.avif">
+<div class="absolute inset-0 bg-accent-gold-muted"></div>
+</div>
+<div class="px-6 py-6">
+<div class="text-accent-gold text-[40px] leading-none mb-2 font-serif">“</div>
+<p class="font-headline-lg italic text-[15px] leading-[1.7] text-text-body mb-4">Không gian yên tĩnh tuyệt đối cùng mùi hương tinh dầu dịu nhẹ giúp tôi thư giãn ngay lập tức. Đây là điểm đến định kỳ mỗi tháng giúp tôi tái tạo lại năng lượng.</p>
+<div class="w-full h-px bg-border-subtle mb-4"></div>
+<span class="text-[14px] font-bold text-text-primary">Chị Lan Phương</span>
+</div>
+</div>
+<!-- Card 4 (New) -->
+<div class="bg-bg-surface border border-border-subtle rounded-[12px] overflow-hidden shadow-card">
+<div class="relative h-[250px]">
+<img alt="Chị Thu Trang" class="w-full h-full object-cover" src="image/massage4-v2.avif">
+<div class="absolute inset-0 bg-accent-gold-muted"></div>
+</div>
+<div class="px-6 py-6">
+<div class="text-accent-gold text-[40px] leading-none mb-2 font-serif">“</div>
+<p class="font-headline-lg italic text-[15px] leading-[1.7] text-text-body mb-4">Liệu trình đá nóng thực sự là một trải nghiệm tuyệt vời. Cảm giác hơi ấm lan tỏa khắp cơ thể giúp mọi căng thẳng như tan biến hoàn toàn. Bao mệt mỏi tan biến.</p>
+<div class="w-full h-px bg-border-subtle mb-4"></div>
+<span class="text-[14px] font-bold text-text-primary">Chị Thu Trang</span>
+</div>
+</div></div>
+</div>
+</section>
+<!-- Section 6: Booking Form -->
+<section class="bg-bg-primary py-12 xl:py-16" id="booking">
+<div class="max-w-container-max mx-auto px-margin-mobile xl:px-margin-desktop">
+<div class="booking-layout">
+<div class="booking-media">
+<div class="booking-media__inner">
+<img alt="Wellness and Relaxation" src="image/z5210446675626_3a7ed6375ae36fc112002c715c4bf2f9.webp">
+<div class="absolute inset-0 bg-primary/10 pointer-events-none"></div>
+</div>
+</div>
+<div class="booking-panel">
+<div class="booking-panel__header">
+<h2 class="font-display-lg text-headline-xl text-primary mb-3">Gửi gắm mỏi mệt</h2>
+<p class="font-body-md text-body-md text-secondary">Hãy cho chúng tôi biết thời gian bạn ghé thăm để tiếp đón chu toàn nhất.</p>
+</div>
+<form class="booking-form">
+<div class="booking-form__body">
+<div class="booking-field">
+<label class="booking-label" for="booking-name">Họ và tên</label>
+<input class="booking-input" id="booking-name" name="name" type="text" autocomplete="name" placeholder="Ví dụ: Nguyễn Thị An" required="">
+</div>
+<div class="booking-field">
+<label class="booking-label" for="booking-phone">Số điện thoại</label>
+<input class="booking-input" id="booking-phone" name="phone" type="tel" autocomplete="tel" placeholder="VD: 0912 345 678" required="">
+</div>
+<div class="booking-field">
+<label class="booking-label" for="booking-service">Loại dịch vụ</label>
+<select class="booking-select" id="booking-service" name="service" required="">
+<option disabled="" selected="" value="">Chọn liệu trình phù hợp với bạn</option>
+<option value="phuc-hoi-co-ban">Phục hồi cơ bản</option>
+<option value="phuc-hoi-nang-cao">Phục hồi nâng cao</option>
+<option value="tri-lieu-phuc-hoi">Trị liệu phục hồi</option>
+<option value="massage-phuc-hoi">Massage phục hồi</option>
+<option value="massage-phuc-hoi-chuyen-sau">Massage phục hồi chuyên sâu</option>
+<option value="massage-tri-lieu-toan-dien">Massage trị liệu toàn diện</option>
+<option value="goi-duong-sinh-co-ban">Gội dưỡng sinh cơ bản</option>
+<option value="lay-ray-tai-co-ban">Lấy ráy tai cơ bản</option>
+<option value="goi-duong-sinh-cao-cap">Gội dưỡng sinh cao cấp</option>
+</select>
+</div>
+<div class="booking-row">
+<div class="booking-field">
+<label class="booking-label" for="booking-date">Ngày đặt lịch</label>
+<input class="booking-input booking-input--date" id="booking-date" name="date" type="text" inputmode="numeric" placeholder="dd/mm/yyyy" pattern="^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/[0-9]{4}$" required="" title="Nhập theo định dạng dd/mm/yyyy">
+</div>
+<div class="booking-field">
+<label class="booking-label" for="booking-time">Giờ đặt lịch</label>
+<input class="booking-input" id="booking-time" name="time" type="time" required="" title="Chọn khung giờ thuận tiện">
+</div>
+</div>
+</div>
+<div class="booking-form__submit">
+<button type="submit" class="btn-rounded w-full bg-accent-green hover:bg-accent-green-hover text-text-primary font-label-md text-label-md uppercase tracking-[0.2em] py-4 transition-colors duration-300 shadow-float">
+Xác nhận đặt lịch</button>
+</div>
+</form></div></div></div></section>
+<div class="booking-modal" id="booking-modal" aria-hidden="true">
+<div class="booking-modal__panel" role="dialog" aria-modal="true" aria-labelledby="booking-modal-title">
+<div class="booking-modal__header">
+<div>
+<h3 class="booking-modal__title font-display-lg text-headline-xl" id="booking-modal-title">Gửi gắm mỏi mệt</h3>
+<p class="booking-modal__subtitle font-body-md text-body-md">Hãy cho chúng tôi biết thời gian bạn ghé thăm để tiếp đón chu toàn nhất.</p>
+</div>
+<button class="booking-modal__close" id="booking-modal-close" type="button" aria-label="Đóng">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<form class="booking-form">
+<div class="booking-form__body">
+<div class="booking-field">
+<label class="booking-label" for="booking-modal-name">Họ và tên</label>
+<input class="booking-input" id="booking-modal-name" name="name" type="text" autocomplete="name" placeholder="Ví dụ: Nguyễn Thị An" required="">
+</div>
+<div class="booking-field">
+<label class="booking-label" for="booking-modal-phone">Số điện thoại</label>
+<input class="booking-input" id="booking-modal-phone" name="phone" type="tel" autocomplete="tel" placeholder="VD: 0912 345 678" required="">
+</div>
+<div class="booking-field">
+<label class="booking-label" for="booking-modal-service">Loại dịch vụ</label>
+<select class="booking-select" id="booking-modal-service" name="service" required="">
+<option disabled="" value="">Chọn liệu trình phù hợp với bạn</option>
+<option value="phuc-hoi-co-ban">Phục hồi cơ bản</option>
+<option value="phuc-hoi-nang-cao">Phục hồi nâng cao</option>
+<option value="tri-lieu-phuc-hoi">Trị liệu phục hồi</option>
+<option value="massage-phuc-hoi">Massage phục hồi</option>
+<option value="massage-phuc-hoi-chuyen-sau">Massage phục hồi chuyên sâu</option>
+<option value="massage-tri-lieu-toan-dien">Massage trị liệu toàn diện</option>
+<option value="goi-duong-sinh-co-ban">Gội dưỡng sinh cơ bản</option>
+<option value="lay-ray-tai-co-ban">Lấy ráy tai cơ bản</option>
+<option value="goi-duong-sinh-cao-cap">Gội dưỡng sinh cao cấp</option>
+</select>
+</div>
+<div class="booking-row">
+<div class="booking-field">
+<label class="booking-label" for="booking-modal-date">Ngày đặt lịch</label>
+<input class="booking-input booking-input--date" id="booking-modal-date" name="date" type="text" inputmode="numeric" placeholder="dd/mm/yyyy" pattern="^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/[0-9]{4}$" required="" title="Nhập theo định dạng dd/mm/yyyy">
+</div>
+<div class="booking-field">
+<label class="booking-label" for="booking-modal-time">Giờ đặt lịch</label>
+<input class="booking-input" id="booking-modal-time" name="time" type="time" required="" title="Chọn khung giờ thuận tiện">
+</div>
+</div>
+</div>
+<div class="booking-form__submit">
+<button type="submit" class="btn-rounded w-full bg-accent-green hover:bg-accent-green-hover text-text-primary font-label-md text-label-md uppercase tracking-[0.2em] py-4 transition-colors duration-300 shadow-float">
+Xác nhận đặt lịch</button>
+</div>
+</form>
+</div>
+</div>
+<footer class="bg-bg-footer text-text-primary border-t border-border-subtle pt-20 pb-[60px] font-body-md" id="ve-chung-toi">
+<div class="max-w-[1280px] mx-auto px-[80px]">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-[60px] items-start">
+<!-- Column 1: Brand -->
+<div class="flex flex-col items-center text-center">
+<h3 class="footer-title">Tựa mình</h3>
+<div class="footer-logo-shell rounded-full border border-border-strong overflow-hidden mb-6 w-[100px] h-[100px] mx-auto" style="background:transparent;border:none;box-shadow:none;padding:0;">
+<img alt="Tựa Mình Spa Logo" class="footer-logo-img w-full h-full object-cover" src="image/spa_logo_transparent.png" style="background:transparent;border:none;box-shadow:none;padding:0;">
+</div>
+<div class="flex flex-row gap-[12px] mb-6 justify-center">
+<a class="w-[36px] h-[36px] rounded-full border border-border-default flex items-center justify-center bg-transparent hover:border-border-strong transition-colors duration-300" href="#">
+<svg class="text-accent-gold" fill="none" height="16" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</a>
+<a class="w-[36px] h-[36px] rounded-full border border-border-default flex items-center justify-center bg-transparent hover:border-border-strong transition-colors duration-300" href="#">
+<svg class="text-accent-gold" fill="none" height="16" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><rect height="20" rx="5" ry="5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" x="2" y="2"></rect><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"></circle><circle cx="17.5" cy="6.5" fill="currentColor" r="1"></circle></svg>
+</a>
+<a class="w-[36px] h-[36px] rounded-full border border-border-default flex items-center justify-center bg-transparent hover:border-border-strong transition-colors duration-300" href="#">
+<span class="text-accent-gold font-bold text-[10px] uppercase">Zalo</span>
+</a>
+</div>
+<p class="footer-tagline italic text-text-body text-[14px] leading-[1.8] max-w-[280px] mx-auto">
+    Khởi nguồn từ mong muốn tạo ra một "trạm dừng" cho những bờ vai mỏi mệt. Tại <b>Tựa Mình</b>, chúng tôi không chỉ làm dịch vụ, chúng tôi trao gửi sự <b>thấu cảm và hồi phục</b> từ đôi bàn tay thuần thục và hương thảo mộc nguyên bản.
+  </p>
+</div>
+<!-- Column 2: Branches -->
+<div class="flex flex-col items-center text-center"><h4 class="footer-title footer-title--compact">Hệ thống chi nhánh</h4><div class="w-10 h-[1px] bg-accent-gold mb-8 mt-1"></div>
+
+<div class="space-y-[18px]">
+<div>
+<p class="footer-branch-name text-[15px] mb-[6px]">Tựa Mình Spa Hanoi</p>
+<div class="flex gap-[10px] justify-center">
+<span class="material-symbols-outlined text-accent-gold text-[14px] mt-1">location_on</span>
+<p class="text-text-muted text-[13px]">68 phố Mã Mây, quận Hoàn Kiếm, Hà Nội</p>
+</div>
+</div>
+<div>
+<p class="footer-branch-name text-[15px] mb-[6px]">Tựa Mình Impression Spa</p>
+<div class="flex gap-[10px] justify-center">
+<span class="material-symbols-outlined text-accent-gold text-[14px] mt-1">location_on</span>
+<p class="text-text-muted text-[13px]">58 phố Mã Mây, quận Hoàn Kiếm, Hà Nội</p>
+</div>
+</div>
+<div>
+<p class="footer-branch-name text-[15px] mb-[6px]">Tựa Mình Signature Spa</p>
+<div class="flex gap-[10px] justify-center">
+<span class="material-symbols-outlined text-accent-gold text-[14px] mt-1">location_on</span>
+<p class="text-text-muted text-[13px]">61 phố Mã Mây, quận Hoàn Kiếm, Hà Nội</p>
+</div>
+</div>
+<div>
+<p class="footer-branch-name text-[15px] mb-[6px]">Tựa Mình Garden Spa</p>
+<div class="flex gap-[10px] justify-center">
+<span class="material-symbols-outlined text-accent-gold text-[14px] mt-1">location_on</span>
+<p class="text-text-muted text-[13px]">06 phố Hoàng Diệu, Hội An, Quảng Nam</p>
+</div>
+</div>
+<div>
+<p class="footer-branch-name text-[15px] mb-[6px]">Tựa Mình Central Spa</p>
+<div class="flex gap-[10px] justify-center">
+<span class="material-symbols-outlined text-accent-gold text-[14px] mt-1">location_on</span>
+<p class="text-text-muted text-[13px]">28 phố Phan Chu Trinh, Hội An, Quảng Nam</p>
+</div>
+</div>
+</div></div>
+<!-- Column 3: Contact -->
+<div class="flex flex-col items-start text-left">
+<h4 class="footer-title footer-title--compact">Liên hệ với chúng tôi</h4>
+<div class="w-10 h-[1px] bg-accent-gold mb-6 mt-1"></div>
+<!-- SUB-GROUP 1: HANOI -->
+<div class="space-y-3">
+<p class="footer-region text-[13px] mb-3">Hà Nội</p>
+<div class="flex items-center gap-[10px] group cursor-pointer justify-start">
+<svg class="text-accent-gold" fill="none" height="14" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><path d="m22 6-10 7L2 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span class="text-text-body text-[13px] group-hover:text-accent-gold transition-colors duration-200">info@serenespa.vn</span>
+</div>
+<div class="flex items-center gap-[10px] group cursor-pointer justify-start">
+<svg class="text-accent-gold" fill="none" height="14" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span class="text-text-body text-[13px] group-hover:text-accent-gold transition-colors duration-200">+84 916362368</span>
+</div>
+<div class="flex items-center gap-[10px] group cursor-pointer justify-start">
+<svg class="text-accent-gold" fill="none" height="14" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span class="text-text-body text-[13px] group-hover:text-accent-gold transition-colors duration-200">+84 933883368</span>
+</div>
+</div>
+<div class="w-full h-px bg-border-subtle my-5"></div>
+<!-- SUB-GROUP 2: HOI AN -->
+<div class="space-y-3">
+<p class="footer-region text-[13px] mb-3">Hội An</p>
+<div class="flex items-center gap-[10px] group cursor-pointer justify-start">
+<svg class="text-accent-gold" fill="none" height="14" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><path d="m22 6-10 7L2 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span class="text-text-body text-[13px] group-hover:text-accent-gold transition-colors duration-200">hoian.info@serenespa.vn</span>
+</div>
+<div class="flex items-center gap-[10px] group cursor-pointer justify-start">
+<svg class="text-accent-gold" fill="none" height="14" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span class="text-text-body text-[13px] group-hover:text-accent-gold transition-colors duration-200">+84 888183368</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Bar -->
+<div class="mt-20 pt-10 border-t border-border-subtle">
+<p class="text-text-hint text-[12px] text-center lg:text-left lg:text-center">
+        © 2025 Tựa Mình Spa. All rights reserved.
+      </p>
+</div>
+</div>
+<!-- Sticky Floating Button (Mobile Only) -->
+<button class="md:hidden fixed bottom-6 right-6 w-[52px] h-[52px] bg-accent-green rounded-full flex items-center justify-center text-text-primary shadow-float z-[60]">
+<span class="material-symbols-outlined">chat_bubble</span>
+</button>
+</footer>
+<script>
+  window.addEventListener('error', function (event) {
+    // #region agent log
+    fetch('http://127.0.0.1:7822/ingest/7bf853cf-edbd-4ac1-a13a-976017cebe0d',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'d9668b'},body:JSON.stringify({sessionId:'d9668b',runId:'run1',hypothesisId:'H4',location:'code.html:script:error-listener',message:'window.error captured',data:{message:event.message,filename:event.filename,lineno:event.lineno,colno:event.colno},timestamp:Date.now()})}).catch(()=>{});
+    // #endregion
+  });
+
+  window.addEventListener('unhandledrejection', function (event) {
+    // #region agent log
+    fetch('http://127.0.0.1:7822/ingest/7bf853cf-edbd-4ac1-a13a-976017cebe0d',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'d9668b'},body:JSON.stringify({sessionId:'d9668b',runId:'run1',hypothesisId:'H4',location:'code.html:script:rejection-listener',message:'unhandled rejection captured',data:{reason:String(event.reason)},timestamp:Date.now()})}).catch(()=>{});
+    // #endregion
+  });
+
+  document.querySelectorAll('.nav-link').forEach((link) => {
+    link.addEventListener('click', () => {
+      document.querySelectorAll('.nav-link').forEach((item) => {
+        item.classList.remove('border-primary', 'text-primary');
+        item.classList.add('border-transparent', 'text-on-surface-variant');
+      });
+      link.classList.remove('border-transparent', 'text-on-surface-variant');
+      link.classList.add('border-primary', 'text-primary');
+    });
+  });
+
+  (function () {
+    var images = document.querySelectorAll('.timeline-step__img');
+    if (!images.length) return;
+    if (!('IntersectionObserver' in window)) {
+      images.forEach(function (img) { img.classList.add('is-visible'); });
+      return;
+    }
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2, rootMargin: '0px 0px -12% 0px' });
+    images.forEach(function (img) { observer.observe(img); });
+  })();
+
+  (function () {
+    var mediaInner = document.querySelector('.booking-media__inner');
+    var panel = document.querySelector('.booking-panel');
+    var mediaImage = mediaInner ? mediaInner.querySelector('img') : null;
+
+    // #region agent log
+    fetch('http://127.0.0.1:7822/ingest/7bf853cf-edbd-4ac1-a13a-976017cebe0d',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'d9668b'},body:JSON.stringify({sessionId:'d9668b',runId:'run1',hypothesisId:'H1',location:'code.html:script:booking-sync-init',message:'booking sync init elements',data:{hasMediaInner:!!mediaInner,hasPanel:!!panel,hasMediaImage:!!mediaImage},timestamp:Date.now()})}).catch(()=>{});
+    // #endregion
+
+    if (!mediaInner || !panel || !mediaImage) return;
+
+    mediaImage.addEventListener('load', function () {
+      // #region agent log
+      fetch('http://127.0.0.1:7822/ingest/7bf853cf-edbd-4ac1-a13a-976017cebe0d',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'d9668b'},body:JSON.stringify({sessionId:'d9668b',runId:'run1',hypothesisId:'H3',location:'code.html:script:booking-image-load',message:'booking image load event',data:{naturalWidth:mediaImage.naturalWidth,naturalHeight:mediaImage.naturalHeight,currentSrc:mediaImage.currentSrc},timestamp:Date.now()})}).catch(()=>{});
+      // #endregion
+    });
+
+    mediaImage.addEventListener('error', function () {
+      // #region agent log
+      fetch('http://127.0.0.1:7822/ingest/7bf853cf-edbd-4ac1-a13a-976017cebe0d',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'d9668b'},body:JSON.stringify({sessionId:'d9668b',runId:'run1',hypothesisId:'H3',location:'code.html:script:booking-image-error',message:'booking image error event',data:{src:mediaImage.getAttribute('src')},timestamp:Date.now()})}).catch(()=>{});
+      // #endregion
+    });
+
+    function syncBookingMediaHeight() {
+      var panelHeight = panel.offsetHeight;
+      var viewportWidth = window.innerWidth;
+      var appliedHeight = '';
+      if (window.innerWidth >= 1024) {
+        appliedHeight = panelHeight + 'px';
+        mediaInner.style.height = appliedHeight;
+      } else {
+        mediaInner.style.height = '';
+      }
+      // #region agent log
+      fetch('http://127.0.0.1:7822/ingest/7bf853cf-edbd-4ac1-a13a-976017cebe0d',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'d9668b'},body:JSON.stringify({sessionId:'d9668b',runId:'run1',hypothesisId:'H2',location:'code.html:script:syncBookingMediaHeight',message:'sync height execution',data:{viewportWidth:viewportWidth,panelHeight:panelHeight,appliedHeight:appliedHeight,computedMediaHeight:getComputedStyle(mediaInner).height},timestamp:Date.now()})}).catch(()=>{});
+      // #endregion
+    }
+
+    syncBookingMediaHeight();
+    window.addEventListener('resize', syncBookingMediaHeight);
+  })();
+
+  (function () {
+    var modal = document.getElementById('booking-modal');
+    var modalClose = document.getElementById('booking-modal-close');
+    var modalService = document.getElementById('booking-modal-service');
+    var triggerButtons = document.querySelectorAll('.service-book-btn');
+    if (!modal || !modalClose || !modalService || !triggerButtons.length) return;
+
+    function openBookingModal(serviceValue) {
+      modal.classList.add('is-open');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      if (serviceValue) {
+        modalService.value = serviceValue;
+      } else {
+        modalService.selectedIndex = 0;
+      }
+    }
+
+    function closeBookingModal() {
+      modal.classList.remove('is-open');
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+
+    triggerButtons.forEach(function (btn) {
+      btn.addEventListener('click', function (event) {
+        event.preventDefault();
+        var service = btn.getAttribute('data-service');
+        openBookingModal(service);
+      });
+    });
+
+    modalClose.addEventListener('click', closeBookingModal);
+    modal.addEventListener('click', function (event) {
+      if (event.target === modal) closeBookingModal();
+    });
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && modal.classList.contains('is-open')) {
+        closeBookingModal();
+      }
+    });
+  })();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>
